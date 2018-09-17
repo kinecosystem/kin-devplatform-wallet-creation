@@ -1,30 +1,38 @@
 # kin-devplatform-wallet-creation
-Helper scripts for creating Kin wallets.
+Helper scripts to create Kin wallets.
 
 In order to create a new Kin wallet, fire up the terminal and follow the next steps:
 
-First make sure that python3 is installed on your machine, to do this run the command: 
+First make sure that python is installed on your machine, to do that, please run the command: 
 ```bash
-python3 --version
+python --version
 ```
-This this the expected output (any version above 3.0.0 will do):
+This this the expected output:
 ```bash
-Python 3.6.5
+Python 2.x.x (3 is fine as well)
 ```
 
 Install Stellar Base:
 ```bash
-pip3 install --user stellar_base
+pip install --user stellar_base
 ```
 
-Step 1:
+Step 1 - Key Generation
+
+The main script will generate a random keypair, these are your public address and secret seed:
 ```bash
-python3 main.py
+python main.py
 ```
 
-Step 2:
-
-Run the following command with the 'seed' from step 1 in your shell:
+This is an example output of this step:
 ```bash
-python3 activate.py SCXLXDAYWGWZMJHHJSR6KGARK43XX3HXW6XW4TVF6WR4JSE3WXVHQIFP
+Public: GBK5HIGM7WYC7M6GYXE6OH7PTGFQNF5A35EHXLGQUWKU6GFOC76LYLWO
+Seed: SAHUI57P7RN64OR3HGNM3CI26DX423KWZBLQAHFZFJP4LRGQYS6L6VOT
+```
+
+Step 2 - Account activation, this can only be done after a third party created the account on the blockchain
+To run the activate script you will need to run the following command with the 'Seed' that was generated in step 1 in 
+your shell:
+```bash
+python activate.py SCXLXDAYWGWZMJHHJSR6KGARK43XX3HXW6XW4TVF6WR4JSE3WXVHQIFP
 ```
