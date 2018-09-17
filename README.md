@@ -30,7 +30,7 @@ Public: GBK5HIGM7WYC7M6GYXE6OH7PTGFQNF5A35EHXLGQUWKU6GFOC76LYLWO
 Seed: SAHUI57P7RN64OR3HGNM3CI26DX423KWZBLQAHFZFJP4LRGQYS6L6VOT
 ```
 
-Step 2 - Account activation, this can only be done after a third party created the account on the blockchain
+Step 2 - Account activation, this can only be done after a third party created the account on the blockchain  
 To run the activate script you will need to run the following command with the 'Seed' that was generated in step 1 in 
 your shell:
 ```bash
