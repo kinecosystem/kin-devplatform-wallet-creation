@@ -12,9 +12,9 @@ This this the expected output:
 Python 2.x.x (3 is fine as well)
 ```
 
-Install Stellar Base:
+Install the Kin SDK:
 ```bash
-pip install --user stellar_base
+pip install --user git+https://github.com/kinecosystem/kin-core-python.git
 ```
 
 Step 1 - Key Generation
